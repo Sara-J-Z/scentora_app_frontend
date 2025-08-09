@@ -1,0 +1,15 @@
+.brand-page {
+  padding: 20px;
+}
+
+.brand-page h1 {
+ font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
