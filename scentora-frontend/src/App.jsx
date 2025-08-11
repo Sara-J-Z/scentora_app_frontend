@@ -2,7 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import UserList from './components/UserList';
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import SignIn from "./pages/SignIn";
+import Register from "./pages/Register";  
+import Nav from "./components/Nav";
+import Category from "./pages/Category";
+import axios from "axios";
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,9 +33,6 @@ function App() {
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
-          <UserList /> {
-            
-          }
         </p>
       </div>
       <p className="read-the-docs">
