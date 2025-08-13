@@ -1,12 +1,27 @@
+import "../style/BrandShowcase.css";
+import { Link } from "react-router-dom";
+
 function BrandShowcase() {
+  const brands = [
+    { name: "DIOR", logo: "/images/CD.png", link: "/brands/1" },
+    { name: "CHANEL", logo: "/images/chanel.png", link: "/brands/2" },
+    { name: "LANCOME", logo: "/images/LANCOME.png", link: "/brands/4" },
+    { name: "ESTÉE LAUDER", logo: "/images/Estée Lauder.png", link: "/brands/3" },
+  ];
+
   return (
-    <section className="py-12 bg-white text-center">
-      <h2 className="text-2xl font-bold mb-6">Featured Brands</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-        <div className="bg-gray-100 py-6 px-4 rounded">NARS</div>
-        <div className="bg-gray-100 py-6 px-4 rounded">Dior</div>
-        <div className="bg-gray-100 py-6 px-4 rounded">Gucci</div>
-        <div className="bg-gray-100 py-6 px-4 rounded">Chanel</div>
+    <section className="brand-showcase-section">
+      <div className="brand-header">
+        <h2>Featured Brands</h2>
+        <a href="/brands">View all Brands</a>
+      </div>
+       <br></br>
+      <div className="brand-showcase">
+        {brands.map((brand, index) => (
+          <Link to={brand.link} key={index} className="brand-logo">
+            <img src={brand.logo} alt={brand.name} />
+          </Link>
+        ))}
       </div>
     </section>
   );

@@ -1,0 +1,64 @@
+.brand-showcase-section {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.brand-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; 
+  margin-bottom: 1.5rem;
+}
+
+.brand-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a70064;
+  margin: 0;
+}
+
+.brand-header a {
+  color: #0074a6;
+  font-size: 0.95rem;
+  text-decoration: none;
+  margin-left: auto; 
+}
+
+.brand-header a:hover {
+  text-decoration: underline;
+}
+
+
+.brand-showcase {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 2rem;
+  justify-content: center; 
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo img {
+  max-width: 220px;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  border: none;
+  background: none;
+}
+
+.brand-logo img:hover {
+  filter: grayscale(0%);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

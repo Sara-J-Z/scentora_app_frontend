@@ -14,7 +14,7 @@ function BrandPage() {
 
   return (
     <div className="brand-page">
-      <h1>Our Brands</h1>
+      <h2>Our Brands</h2>
       <div className="brand-grid">
         {brands.map((brand) => (
           <BrandCard key={brand.id} brand={brand} />

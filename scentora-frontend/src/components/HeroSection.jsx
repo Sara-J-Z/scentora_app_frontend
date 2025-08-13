@@ -1,17 +1,21 @@
+import { Link } from "react-router-dom";
+import "../style/HeroSection.css";
+
 function HeroSection() {
   return (
-    <section className="bg-pink-100 text-center py-16 px-4">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Discover Your Signature Scent</h1>
-        <p className="text-lg md:text-xl text-gray-700 mb-6">
-          Explore premium makeup and perfumes from the best brands.
-        </p>
-        <a
-          href="/products"
-          className="inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
-        >
+    <section className="hero">
+      <video autoPlay loop muted playsInline className="hero-video">
+        <source src="/videos/hero-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="hero-content">
+        <h1>Discover Our Latest Collection</h1>
+        <p>Shop the best products from top brands and enjoy exclusive offers.</p>
+        <br></br>
+        <Link to="/products" className="shop-now-btn">
           Shop Now
-        </a>
+        </Link>
       </div>
     </section>
   );

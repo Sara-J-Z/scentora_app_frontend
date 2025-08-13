@@ -5,19 +5,22 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProductDetails from "./pages/ProductDetails";
 import BrandPage from "./pages/BrandPage";
+import BrandDetail from "./pages/BrandDetail";
+import "./App.css";
 import UserList from './components/UserList';
 
 function App() {
 return (
 <Router>
-<div className="flex flex-col min-h-screen">
+<div className="app-container">
 <Header />
-<main className="flex-grow">
+<main className="main-content">
 <Routes>
 <Route path="/" element={<HomePage />} />
 <Route path="/products" element={<AllProductsPage />} />
 <Route path="/products/:id" element={<ProductDetails />} />
 <Route path="/brands" element={<BrandPage />} />
+<Route path="/brands/:id" element={<BrandDetail />} />
 </Routes>
 </main>
 <Footer />
