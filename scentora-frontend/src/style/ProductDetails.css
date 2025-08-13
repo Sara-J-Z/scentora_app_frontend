@@ -1,0 +1,39 @@
+.product-details-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+}
+
+.product-details-container h2 {
+  color: hotpink;
+  margin-bottom: 1rem;
+}
+
+.product-details-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-details-price {
+  color: hotpink;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.product-details-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333; 
+}
+
+.product-details-info p strong {
+  color: #000;
+}
