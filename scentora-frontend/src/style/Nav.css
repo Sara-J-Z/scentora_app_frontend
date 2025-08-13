@@ -1,0 +1,32 @@
+header {
+  background-color: #FFA1D6; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  height: 80px;
+}
+
+nav {
+  display: flex;
+  gap: 20px; 
+}
+
+nav a {
+  color: #AB196C;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 10px; 
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: rgba(171, 25, 108, 0.1); 
+  color: #7A114E;
+}
