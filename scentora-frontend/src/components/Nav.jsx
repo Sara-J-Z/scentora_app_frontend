@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import "../style/Nav.css";
+
 
 const Nav = ({ user, handleLogOut }) => {
   const signedInLinks = (
@@ -20,6 +22,8 @@ const Nav = ({ user, handleLogOut }) => {
       <Link to="/register">Register</Link>
     </>
   );
+
+
 
   return (
     <header>

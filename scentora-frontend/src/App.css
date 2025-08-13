@@ -1,3 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -42,163 +57,10 @@
 }
 
 
-/* Nav Style*/
-header {
-  background-color: #FFA1D6;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-header .logo {
-  height: 50px;;
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-  margin-left: auto;
-}
-
-nav a {
-  color: #AB196C;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Register Style */
-
-.page-container {
-  max-width: 100vh;
-  background-color: #FFA1D6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.form-card {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-
-.input-wrapper {
-  margin-bottom: 15px;
-}
-
-.input-wrapper label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.input-wrapper input, .input-wrapper select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-.btn primary {
-  background-color: #AB196C;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  width: 100%;
-  transition: background-color 0.3s;
-}
-
-.Regbtn:hover {
-  background-color: #8d1459;
-}
-
-.Regbtn:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.linkLogInContainer {
-  margin-top: 15px;
-  text-align: center;
-}
-
-.linkReg {
-  color: #AB196C;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.linkReg:hover {
-  text-decoration: underline;
-}
-
-
-
-.profileData {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.profileData h1 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.profileData h3 {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.profileData p {
-  color: #444;
-  margin-bottom: 8px;
-}
-
-.ProfileAction {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column ;
-  gap: 10px;
-  width: 100%;
-  max-width: 400px;
-}
-
-.ProfileActions button {
-  background-color: #AB196C;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  width: 100%;
-  transition: background-color 0.3s;
-}
-
-.ProfileActions button:hover {
-  background-color: #8d1459;
-}
 
 /* SignIn Style */
 
-.signInContainer {
+/* .signInContainer {
   max-width: 100vh;
   background-color: #FFA1D6;
   display: flex;
@@ -224,12 +86,12 @@ nav a {
   margin-bottom: 20px;
   text-align: center;
   display: block;
-}
+} */
 
 
 /* Category Style */
 
-.category-container {
+/* .category-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 20px;
@@ -263,4 +125,4 @@ nav a {
   font-size: 14px;
   color: #AB196C;
   font-weight: bold;
-}
+} */
