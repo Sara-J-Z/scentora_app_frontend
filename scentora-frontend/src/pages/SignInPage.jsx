@@ -30,7 +30,7 @@ const SignIn = ({ setUser }) => {
 
   return (
     <div className="page-container">
-      <label htmlFor="col" className="page-title">
+      <label htmlFor="col" className="Page-title">
         Sign In
       </label>
 
