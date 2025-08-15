@@ -9,7 +9,7 @@
 
 .logo {
   object-fit: contain;
-  width: 90px;
+  width: 130px;
 }
 
 .logo-link {
@@ -28,7 +28,7 @@
 
 .nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #571239;
   font-weight: 500;
   transition: color 0.2s ease;
 }

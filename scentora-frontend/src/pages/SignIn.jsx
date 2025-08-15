@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { SignInUser } from "../services/Auth";
+import "../style/SignInPage.css";
 
 const SignIn = ({ setUser }) => {
   const navigate = useNavigate();
