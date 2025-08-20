@@ -137,3 +137,17 @@ body {
     color: red;
     text-align: center;
 }
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card .Page-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-card .btn-primary {
+    margin-top: 20px;
+}

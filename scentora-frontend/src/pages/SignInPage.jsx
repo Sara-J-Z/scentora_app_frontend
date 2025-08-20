@@ -1,9 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { SignInUser } from "../services/auth";
 import "../style/SignInPage.css";
 
-const SignIn = ({ setUser }) => {
+const SignIn = ({ handleLogin }) => {
   const navigate = useNavigate();
 
   const initialState = { email: "", password: "" };
@@ -18,10 +18,18 @@ const SignIn = ({ setUser }) => {
     e.preventDefault();
     console.log("Submitting form with values:", formValues);
     try {
-      console.log("Submitting form with values: in try", formValues);
-      const payload = await SignInUser(formValues);
+      const response = await SignInUser(formValues);
+      
+      console.log('API Response:', response); 
+      const token = response.access; 
+      console.log('Extracted Token:', token);
+
+      if (token) {
+        await handleLogin(token); 
+      }
+      
       setFormValues(initialState);
-      setUser(payload);
+      
       navigate("/");
     } catch (error) {
       console.log("Error during sign in:", error);

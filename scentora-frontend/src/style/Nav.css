@@ -30,3 +30,20 @@ nav a:hover {
   background-color: rgba(171, 25, 108, 0.1); 
   color: #7A114E;
 }
+
+nav button {
+  background-color: transparent;
+  border: none;
+  color: #AB196C;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px 10px; 
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav button:hover {
+  background-color: rgba(171, 25, 108, 0.1); 
+  color: #7A114E;
+}

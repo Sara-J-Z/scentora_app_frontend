@@ -1,16 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState} from "react";
 import "../style/Nav.css";
 
 
-const Nav = ({ user, handleLogOut }) => {
+const Nav = ({ user, handleLogout }) => {
+  const navigate = useNavigate();
+
   const signedInLinks = (
     <>
       <Link to="/">Home</Link>
       <Link to="/about">About Us</Link>
       <Link to="/profile">Profile</Link>
-      <Link onClick={handleLogOut} to="/">
-        Logout
-      </Link>
+      <button onClick={() => {
+        handleLogout();
+        navigate("/");
+      }}>
+        Sign Out
+      </button>
     </>
   );
 
@@ -23,20 +29,17 @@ const Nav = ({ user, handleLogOut }) => {
     </>
   );
 
-
-
   return (
     <header>
-      {/* Logo on the left */}
       <Link to="/">
         <img className="logo" src="/images/logo.png" alt="logo" />
       </Link>
 
-      {/* Navigation links */}
       <nav>
         {user ? signedInLinks : publicLinks}
       </nav>
     </header>
+
   );
 };
 
